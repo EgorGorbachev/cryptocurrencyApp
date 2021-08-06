@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main">#91B6E6</color>
+    <color name="lightMain">#C4DAF4</color>
+    <color name="darkGrey">#6a655d</color>
+    <color name="liteGrey">#424242</color>
+    <color name="liteGreyOp">#70DCDCDC</color>
+    <color name="yellow">#1c222a</color>
+    <color name="darkYellow">#825b00</color>
+    <color name="darkYellowOp">#95825B00</color>
+
+    <color name="green">#950D8200</color>
+    <color name="red">#95820000</color>
+</resources>

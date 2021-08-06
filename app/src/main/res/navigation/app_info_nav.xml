@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_info_nav"
+    app:startDestination="@id/appInfoFragment1">
+
+    <fragment
+        android:id="@+id/appInfoFragment3"
+        android:name="com.example.gorbachev_cryptocurrencyapp.presentation.fragments.appInfoViewPagerFragments.AppInfoFragment3"
+        android:label="fragment_app_info3"
+        tools:layout="@layout/fragment_app_info3">
+        <action
+            android:id="@+id/action_appInfoFragment3_to_appInfoFragment2"
+            app:destination="@id/appInfoFragment2"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_appInfoFragment3_to_coinsInfoFragment2"
+            app:destination="@id/coinsInfoFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/appInfoFragment1"
+        android:name="com.example.gorbachev_cryptocurrencyapp.presentation.fragments.appInfoViewPagerFragments.AppInfoFragment1"
+        android:label="fragment_app_info1"
+        tools:layout="@layout/fragment_app_info1">
+        <action
+            android:id="@+id/action_appInfoFragment1_to_appInfoFragment2"
+            app:destination="@id/appInfoFragment2"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/appInfoFragment2"
+        android:name="com.example.gorbachev_cryptocurrencyapp.presentation.fragments.appInfoViewPagerFragments.AppInfoFragment2"
+        android:label="fragment_app_info2"
+        tools:layout="@layout/fragment_app_info2">
+        <action
+            android:id="@+id/action_appInfoFragment2_to_appInfoFragment3"
+            app:destination="@id/appInfoFragment3"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_appInfoFragment2_to_appInfoFragment1"
+            app:destination="@id/appInfoFragment1"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/coinsInfoFragment2"
+        android:name="com.example.gorbachev_cryptocurrencyapp.presentation.fragments.CoinsInfoFragment"
+        android:label="CoinsInfoFragment"
+        tools:layout="@layout/fragment_coins_info">
+        <action
+            android:id="@+id/action_coinsInfoFragment2_to_appInfoFragment1"
+            app:destination="@id/appInfoFragment1"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+</navigation>
