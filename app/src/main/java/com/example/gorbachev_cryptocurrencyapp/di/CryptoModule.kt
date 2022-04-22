@@ -1,6 +1,7 @@
 package com.example.gorbachev_cryptocurrencyapp.di
 
 import com.example.gorbachev_cryptocurrencyapp.api.CryptoApi
+import dagger.Component
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -26,4 +27,5 @@ object CryptoModule {
 	@Singleton
 	fun provideCryptoApi(retrofit: Retrofit): CryptoApi =
 		retrofit.create(CryptoApi::class.java)
+	
 }

@@ -56,7 +56,6 @@ class AppInfoFragment3 : BaseFragment(R.layout.fragment_app_info3) {
 		}
 	}
 	
-	
 	private fun createRequest() {
 		val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
 			.requestEmail()
@@ -64,6 +63,7 @@ class AppInfoFragment3 : BaseFragment(R.layout.fragment_app_info3) {
 		
 		mGoogleSignInClient = GoogleSignIn.getClient(requireContext(), gso)
 	}
+	
 	
 	private fun signIn() {
 		val signInIntent = mGoogleSignInClient?.signInIntent
